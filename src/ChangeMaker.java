@@ -18,8 +18,9 @@
 public class ChangeMaker {
     public static void main(String[] args) {
         int totalCents = 287;   // try other values when it works
-
-        // Your code here
-
-    }
+       // int quarters - totalCents / 25
+        System.out.println("Quaters"+ totalCents / 25);
+        System.out.println("Remaining without quarters"+ totalCents % 25);
+        System.out.println("Dime"+ 12 / 10);
+        System.out.println("Remaining without quarters and dimes"+ 12 % 10);
 }
