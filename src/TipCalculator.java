@@ -16,7 +16,13 @@ public class TipCalculator {
         int tipPercent = 18;
         int people = 4;
 
-        // Your code here
+        double tipAmount = Math.round(billAmount * (tipPercent/100.0)*100)/100.0;
+        double total = tipAmount + billAmount;
+        double eachShare = total / 4;
+        double roundShare = Math.round(eachShare * 100) / 100.0;
 
+        System.out.println("Tip Amount" + tipAmount);
+        System.out.println("Bill Total" + total);
+        System.out.println("Each Share" + roundShare);
     }
 }
